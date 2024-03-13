@@ -2,8 +2,10 @@
 class Assets {
   Assets._();
 
+  static const String fontsMontserratVariableFontWght = 'assets/fonts/Montserrat-VariableFont_wght.ttf';
   static const String imagesAvatar1 = 'assets/images/avatar1.svg';
   static const String imagesAvatar2 = 'assets/images/avatar2.svg';
+  static const String imagesAvatar3 = 'assets/images/avatar3.svg';
   static const String imagesBalance = 'assets/images/balance.svg';
   static const String imagesDashboard = 'assets/images/dashboard.svg';
   static const String imagesExpenses = 'assets/images/expenses.svg';
@@ -15,4 +17,5 @@ class Assets {
   static const String imagesSettingSystem = 'assets/images/setting_system.svg';
   static const String imagesStatistics = 'assets/images/statistics.svg';
   static const String imagesWalletAccount = 'assets/images/wallet_account.svg';
+
 }
