@@ -16,8 +16,14 @@ class CustomDrawerItem extends StatelessWidget {
       leading: SvgPicture.asset(drawerItemModel.image),
       title: Text(
         drawerItemModel.title,
-        style: AppStyles.styleRegular16,
+        style: isActive ? AppStyles.styleBold16 : AppStyles.styleRegular16,
       ),
+      trailing: isActive
+          ? Container(
+              width: 3.27,
+              decoration: const BoxDecoration(color: Color(0xff4EB7F2)),
+            )
+          : null,
     );
   }
 }

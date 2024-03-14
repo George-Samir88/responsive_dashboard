@@ -33,7 +33,6 @@ class _CustomDrawerItemListViewState extends State<CustomDrawerItemListView> {
             if (activeIndex != index) {
               setState(() {
                 activeIndex = index;
-                print(activeIndex);
               });
             }
           },
