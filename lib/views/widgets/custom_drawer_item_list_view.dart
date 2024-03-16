@@ -26,7 +26,7 @@ class _CustomDrawerItemListViewState extends State<CustomDrawerItemListView> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return SliverList.builder(
       itemBuilder: (context, index) {
         return GestureDetector(
           onTap: () {
@@ -46,8 +46,6 @@ class _CustomDrawerItemListViewState extends State<CustomDrawerItemListView> {
         );
       },
       itemCount: drawerItemsList.length,
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
     );
   }
 }
