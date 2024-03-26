@@ -1,25 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/views/widgets/all_expenses_header.dart';
 
-class AllExpenses extends StatelessWidget {
-  const AllExpenses({super.key});
+class AllExpensesItem extends StatelessWidget {
+  const AllExpensesItem({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
       decoration: ShapeDecoration(
         color: Colors.white,
         shape: RoundedRectangleBorder(
+          side: const BorderSide(width: 1, color: Color(0xFFF1F1F1)),
           borderRadius: BorderRadius.circular(12),
         ),
       ),
-      child: const Column(
+      child: Column(
         children: [
-          AllExpensesHeader(),
+
         ],
       ),
     );
   }
 }
-
