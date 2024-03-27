@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/core/utils/styles.dart';
 import 'package:responsive_dashboard/models/all_expenses_item_model.dart';
 import 'package:responsive_dashboard/views/widgets/all_expenses_item_header.dart';
 
@@ -19,9 +20,32 @@ class AllExpensesItem extends StatelessWidget {
         ),
       ),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           AllExpensesItemHeader(
             image: allExpensesItemModel.image,
+          ),
+          const SizedBox(
+            height: 34,
+          ),
+          Text(
+            allExpensesItemModel.title,
+            style: AppStyles.styleSemiBold16,
+          ),
+          const SizedBox(
+            height: 8,
+          ),
+          Text(
+            allExpensesItemModel.date,
+            style: AppStyles.styleRegular14,
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          Text(
+            allExpensesItemModel.price,
+            style: AppStyles.styleSemiBold24
+                .copyWith(color: const Color(0xFF4DB7F2)),
           ),
         ],
       ),
