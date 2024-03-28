@@ -18,7 +18,7 @@ class AllExpensesItemHeader extends StatelessWidget {
           decoration: ShapeDecoration(
             color: isSelected
                 ? Colors.white.withOpacity(0.10000000149011612)
-                : const Color(0xff4EB7F2),
+                : const Color(0xFFFAFAFA),
             shape: const OvalBorder(),
           ),
           //center widget to make center widget take the constraints and svgImage applied with original size
