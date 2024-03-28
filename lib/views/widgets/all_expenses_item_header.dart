@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class AllExpensesItemHeader extends StatelessWidget {
-  const AllExpensesItemHeader({super.key, required this.image});
+  const AllExpensesItemHeader(
+      {super.key, required this.image, required this.isSelected});
 
   final String image;
+  final bool isSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +15,20 @@ class AllExpensesItemHeader extends StatelessWidget {
         Container(
           width: 60,
           height: 60,
-          decoration: const ShapeDecoration(
-            color: Color(0xFFFAFAFA),
-            shape: OvalBorder(),
+          decoration: ShapeDecoration(
+            color: isSelected
+                ? Colors.white.withOpacity(0.10000000149011612)
+                : const Color(0xff4EB7F2),
+            shape: const OvalBorder(),
           ),
           //center widget to make center widget take the constraints and svgImage applied with original size
-          child: Center(child: SvgPicture.asset(image)),
+          child: Center(
+              child: SvgPicture.asset(
+            image,
+            colorFilter: ColorFilter.mode(
+                isSelected ? Colors.white : const Color(0xFF4DB7F2),
+                BlendMode.srcIn),
+          )),
         ),
         const Expanded(
           child: SizedBox(),
@@ -26,9 +36,9 @@ class AllExpensesItemHeader extends StatelessWidget {
         Transform.rotate(
           //90 degree to radians
           angle: 2 * -1.57079633,
-          child: const Icon(
+          child: Icon(
             Icons.arrow_back_ios_new_outlined,
-            color: Color(0xFF064060),
+            color: isSelected ? Colors.white : const Color(0xFF064060),
           ),
         ),
       ],
