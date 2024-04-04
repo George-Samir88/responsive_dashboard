@@ -23,8 +23,17 @@ class LatestTransactionListView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height: 100,
+    //this approach applied when you have fixed items in list but you haven't the height of items of list
+    return SingleChildScrollView(
+      child: Row(
+        children: userInfoList
+            .map((e) =>
+                IntrinsicWidth(child: UserinfoListTile(userInfoModel: e)))
+            .toList(),
+      ),
+    );
+    /*return SizedBox(
+      height: 80,
       child: ListView.builder(
         itemBuilder: (context, index) {
           return IntrinsicWidth(
@@ -34,6 +43,6 @@ class LatestTransactionListView extends StatelessWidget {
         itemCount: userInfoList.length,
         scrollDirection: Axis.horizontal,
       ),
-    );
+    );*/
   }
 }
