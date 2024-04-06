@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/utils/styles.dart';
 import 'package:responsive_dashboard/views/widgets/latest_transaction_list_view.dart';
-import 'package:responsive_dashboard/views/widgets/title_text_field.dart';
+import 'package:responsive_dashboard/views/widgets/quick_invoice_form.dart';
 
 class LatestTransactionSection extends StatelessWidget {
   const LatestTransactionSection({super.key});
@@ -21,11 +21,9 @@ class LatestTransactionSection extends StatelessWidget {
         LatestTransactionListView(),
         Divider(
           height: 48,
+          color: Color(0xFFF1F1F1),
         ),
-        TitleTextField(
-          title: 'Customer name',
-          hint: 'Type customer name',
-        ),
+        QuickInvoiceForm(),
       ],
     );
   }
