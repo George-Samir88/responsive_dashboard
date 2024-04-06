@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:responsive_dashboard/views/widgets/custom_button.dart';
 import 'package:responsive_dashboard/views/widgets/title_text_field.dart';
 
@@ -58,7 +56,19 @@ class QuickInvoiceForm extends StatelessWidget {
         Row(
           children: [
             Expanded(
-              child: CustomButton(),
+              child: CustomButton(
+                text: 'Add more details',
+                backgroundColor: Colors.white,
+                textColor: Color(0xFF4DB7F2),
+              ),
+            ),
+            SizedBox(
+              width: 24,
+            ),
+            Expanded(
+              child: CustomButton(
+                text: 'Send Money',
+              ),
             ),
           ],
         ),
