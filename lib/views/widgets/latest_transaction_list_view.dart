@@ -25,6 +25,7 @@ class LatestTransactionListView extends StatelessWidget {
   Widget build(BuildContext context) {
     //this approach applied when you have fixed items in list but you haven't the height of items of list
     return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
       child: Row(
         children: userInfoList
             .map((e) =>
