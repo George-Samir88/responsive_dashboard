@@ -1,6 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
-import 'package:responsive_dashboard/views/widgets/my_card.dart';
+import 'package:responsive_dashboard/views/widgets/my_card_page_view.dart';
 
 import 'all_expenses_and_quick_invoice_section.dart';
 
@@ -25,7 +26,7 @@ class DesktopDashboardView extends StatelessWidget {
           width: 24,
         ),
         Expanded(
-          child: MyCard(),
+          child: MyCardPageView(),
         ),
       ],
     );
