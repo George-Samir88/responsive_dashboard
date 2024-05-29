@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:responsive_dashboard/views/widgets/custom_dots_indicator.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
+import 'package:responsive_dashboard/views/widgets/dots_indicator.dart';
 
 import 'all_expenses_and_quick_invoice_section.dart';
 
@@ -25,7 +25,7 @@ class DesktopDashboardView extends StatelessWidget {
         SizedBox(
           width: 24,
         ),
-        CustomDotsIndicator(isActive: false),
+        DotsIndicator(),
       ],
     );
   }
