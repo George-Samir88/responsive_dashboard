@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/utils/styles.dart';
 import 'package:responsive_dashboard/views/widgets/dots_indicator.dart';
@@ -28,9 +29,6 @@ class _MyCardSectionState extends State<MyCardSection> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(
-          height: 24,
-        ),
         const SizedBox(
           width: 420,
           child: Text(
