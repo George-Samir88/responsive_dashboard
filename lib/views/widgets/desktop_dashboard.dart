@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/custom_drawer.dart';
-import 'package:responsive_dashboard/views/widgets/income_section.dart';
+import 'package:responsive_dashboard/views/widgets/my_card_and_all_transaction_and_income_section.dart';
 
 import 'all_expenses_and_quick_invoice_section.dart';
 
@@ -26,7 +26,7 @@ class DesktopDashboardView extends StatelessWidget {
           width: 24,
         ),
         Expanded(
-          child: IncomeSection(),
+          child: MyCardAndAllTransactionAndIncomeSection(),
         ),
       ],
     );
