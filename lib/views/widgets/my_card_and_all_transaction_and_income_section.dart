@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/views/widgets/income_section.dart';
-import 'package:responsive_dashboard/views/widgets/my_cards_and_transaction_history_scetion.dart';
+import 'package:responsive_dashboard/views/widgets/my_cards_and_transaction_history_section.dart';
 
 class MyCardAndAllTransactionAndIncomeSection extends StatelessWidget {
   const MyCardAndAllTransactionAndIncomeSection({super.key});
